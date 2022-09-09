@@ -9,6 +9,7 @@
     <script src="script.js"></script>
     <script src="game.js"></script>
 </head>
+
 <body>
     <div class="game-container">
         <h1>Number Guesser!</h1>
@@ -17,5 +18,32 @@
             <p class="guess-label">Target Number: <span id="target-number">?</span></p>
         </div>
     </div>
+
+    <div class="guessing-area">
+        <div class="guess computer-guess">
+            <div class="guess-title">
+                <p class="guess-label">Computer</p>
+                <p class="guess-label">Score: <span id="computer-score">0</span></p>
+            </div>
+            <p id="computer-guess">?</p>
+            <p class="winning-text" id="computer-wins"></p>
+        </div>
+        <div class="guess human-guess">
+            <div class="guess-title">
+                <p class="guess-label">You</p>
+                <p class="guess-label">Score: <span id="human-score">0</span></p>
+            </div>
+            <input type="number" id="human-guess" min="0" max="9" value="0">
+            <div class="number-control">
+                <button class="number-control left" id="subtract" disabled>-</button>
+                <button class="number-control right" id="add">+</button>
+                <button class="button" id="guess">Make a Guess</button>
+            </div>
+        </div>
+        <div class="next-round-container">
+            <button class="button" id="next-round" disabled>Next Round</button>
+        </div>
+    </div>
+
 </body>
 </html>
