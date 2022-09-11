@@ -12,7 +12,9 @@
 
 <body>
     <div class="game-container">
-        <h1>Number Guesser!</h1>
+        <header>
+            <h1>Number Guesser!</h1>
+        </header>
         <div class="rounds">
             <p class="round-label">Round <span id="round-number">1</span></p>
             <p class="guess-label">Target Number: <span id="target-number">?</span></p>
@@ -23,7 +25,7 @@
         <div class="guess computer-guess">
             <div class="guess-title">
                 <p class="guess-label">Computer</p>
-                <p class="guess-label">Score: <span id="computer-score">0</span></p>
+                <p class="score-label">Score: <span id="computer-score">0</span></p>
             </div>
             <p id="computer-guess">?</p>
             <p class="winning-text" id="computer-wins"></p>
@@ -31,7 +33,7 @@
         <div class="guess human-guess">
             <div class="guess-title">
                 <p class="guess-label">You</p>
-                <p class="guess-label">Score: <span id="human-score">0</span></p>
+                <p class="score-label">Score: <span id="human-score">0</span></p>
             </div>
             <input type="number" id="human-guess" min="0" max="9" value="0">
             <div class="number-control">
