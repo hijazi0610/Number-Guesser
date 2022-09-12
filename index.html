@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Guesser</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     <script src="game.js"></script>
 </head>
-
 <body>
     <div class="game-container">
         <header>
@@ -20,7 +17,6 @@
             <p class="guess-label">Target Number: <span id="target-number">?</span></p>
         </div>
     </div>
-
     <div class="guessing-area">
         <div class="guess computer-guess">
             <div class="guess-title">
@@ -36,16 +32,15 @@
                 <p class="score-label">Score: <span id="human-score">0</span></p>
             </div>
             <input type="number" id="human-guess" min="0" max="9" value="0">
-            <div class="number-control">
+            <div class="number-controls">
                 <button class="number-control left" id="subtract" disabled>-</button>
                 <button class="number-control right" id="add">+</button>
-                <button class="button" id="guess">Make a Guess</button>
+                <button class="guess-control" id="guess">Make a Guess</button>
             </div>
         </div>
         <div class="next-round-container">
             <button class="button" id="next-round" disabled>Next Round</button>
         </div>
     </div>
-
 </body>
 </html>
